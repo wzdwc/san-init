@@ -1,0 +1,18 @@
+<template>
+    <div class="hello">Home</div>
+</template>
+<script>
+    import san from 'san'
+    export default class home extends san.Component {
+        initData() {
+            return {}
+        }
+        route(e) {
+        }
+    }
+</script>
+<style>
+    .hello {
+        color: blue;
+    }
+</style>

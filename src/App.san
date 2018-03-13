@@ -1,0 +1,43 @@
+<template>
+    <div class="app-container">
+        <div class="app-drawer">
+            <div class="drawer-title">
+                <h3>XXX管理系统</h3>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><router-link to="/">Home</router-link></li>
+                    <li><router-link to="/about/111">about</router-link></li>
+                </ul>
+            </div>
+        </div>
+        <div class="app-bar">
+            <div class="user-info">
+                <span>userName</span>
+            </div>
+        </div>
+        <div class="app-content">
+            <div id="main"></div>
+        </div>
+    </div>
+</template>
+<script>
+    import san from 'san'
+    import { Link } from 'san-router'
+
+    export default class App extends san.Component {
+        static components = {
+            'router-link': Link,
+        }
+        initData() {
+            return {}
+        }
+        route() {}
+        attached() {}
+    }
+</script>
+<style>
+    .hello {
+        color: blue;
+    }
+</style>

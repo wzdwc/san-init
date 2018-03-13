@@ -1,0 +1,17 @@
+<template>
+    <p>关于关于</p>
+</template>
+<script>
+    import san from 'san'
+    export default class home extends san.Component {
+        initData() {
+            return {}
+        }
+        route() {}
+    }
+</script>
+<style>
+    .hello {
+        color: blue;
+    }
+</style>
