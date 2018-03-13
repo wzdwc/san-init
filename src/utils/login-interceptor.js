@@ -1,6 +1,4 @@
-import store from '../store'
-
-let loginInterceptor = (e, config) => {
+let loginInterceptor = (e, config, store) => {
     // 根据router的meta属性是否需要登录
     if (config.meta && config.meta.auth && !store.isLogin()) {
         console.log('not login ')
